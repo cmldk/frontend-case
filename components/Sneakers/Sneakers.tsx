@@ -4,14 +4,14 @@ import { SneakersInfo } from './SneakersInfo';
 
 const Sneakers = () => {
   return (
-    <>
+    <section className="relative overflow-hidden">
+      <Icon
+        name="Rectangle31"
+        width={1428}
+        height={806}
+        className="absolute z-[-1] right-[-16%] top-[56%] sm:top-[40%] 2xl:top-[12%]"
+      />
       <section className="container mx-auto relative flex flex-col 2xl:flex-row items-center justify-between">
-        <Icon
-          name="Rectangle31"
-          width={1428}
-          height={806}
-          className="absolute z-[-1] right-[-16%] top-[120%] sm:top-[52%] 2xl:top-[20%]"
-        />
         <div className="flex flex-col items-center text-center 2xl:text-start 2xl:items-start space-y-8 w-4/6">
           <h1>Collectible Sneakers</h1>
           <p className="text-lg text-slate-900">
@@ -44,7 +44,7 @@ const Sneakers = () => {
       </section>
 
       <SneakersInfo />
-    </>
+    </section>
   );
 };
 export default Sneakers;

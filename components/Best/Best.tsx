@@ -13,10 +13,14 @@ export function Best() {
           </button>
         </div>
         <div className="flex flex-col lg:flex-row lg:justify-between gap-20 relative">
-          <span className="absolute w-[271px] h-[271px] -left-[35px] top-[176px] bg-pink-700 opacity-75 rounded-[50px]"></span>
-          <span className="absolute w-[161px] h-[161px] left-[422px] -top-[31px] bg-sky-700 opacity-75 rounded-[50px]"></span>
-          <span className="absolute w-[202px] h-[202px] left-[982px] top-[294px] bg-fuchsia-700 opacity-75 rounded-[30px]"></span>
-          <span className="absolute w-[232px] h-[232px] left-[1091px] top-[33px] bg-green-700 opacity-75 rounded-[50px]"></span>
+          <span className="hidden sm:block absolute w-[271px] h-[271px] -left-[35px] top-[176px] bg-pink-700 opacity-75 rounded-[50px]"></span>
+          <span className="hidden sm:block  absolute w-[161px] h-[161px] left-[422px] -top-[31px] bg-sky-700 opacity-75 rounded-[50px]"></span>
+          <span className="hidden sm:block absolute w-[202px] h-[202px] left-[982px] top-[294px] bg-fuchsia-700 opacity-75 rounded-[30px]"></span>
+          <span className="hidden sm:block absolute w-[232px] h-[232px] left-[1091px] top-[33px] bg-green-700 opacity-75 rounded-[50px]"></span>
+
+          <span className="absolute sm:hidden w-[271px] h-[271px] left-[40px] top-[280px] bg-pink-700 opacity-75 rounded-[50px]"></span>
+          <span className="absolute sm:hidden w-[161px] h-[161px] left-[250px] top-[680px] bg-sky-700 opacity-75 rounded-[50px]"></span>
+          <span className="absolute sm:hidden w-[202px] h-[202px] left-[-20px] top-[1150px] bg-fuchsia-700 opacity-75 rounded-[30px]"></span>
 
           <Card src="/images/best/Picture1.jpg" />
           <Card src="/images/best/Picture3.jpg" />
@@ -26,6 +30,7 @@ export function Best() {
     </section>
   );
 }
+
 // /* Content Box */
 
 // box-sizing: border-box;
